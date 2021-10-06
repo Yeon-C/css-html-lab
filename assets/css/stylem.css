@@ -145,18 +145,21 @@ body h1 {
     text-align: center;
     margin-bottom: 20px;
 }
-/*=====Picture=====*/
+/*=====Picture updated with animation=====*/
 
 .dance{
   display: flex;
   background-color: rgb(165, 173, 162);
+  animation-name: animate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
   justify-content:space-evenly;
   height: 510 px;
   align-items: center;
   padding-top: 90px;
   padding-bottom: 90px;
 }
-.chefs .fit-picture{
+.dance .fit-picture{
     height: 310px;
     width: 100px;
 }
@@ -164,6 +167,17 @@ body h1 {
     height: 410px;
     width: 550px;  
 }
+
+@keyframes animate {
+    0%   {background-color: red;}
+    10%  {background-color: orange;}
+    25%  {background-color: yellow;}
+    35%  {background-color: green;}
+    50%  {background-color: blue;}
+    65%  {background-color: indigo;}
+    85%  {background-color: violet;}
+    100% {background-color: red;}
+  }
 
 /*=====schedule=====*/
 .schedule{
